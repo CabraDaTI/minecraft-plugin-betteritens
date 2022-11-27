@@ -5,7 +5,7 @@ import org.cabradati.betteritens.DIContainer
 import org.cabradati.betteritens.itens.hidromel.events.HidromelConsumirEvent
 import org.cabradati.betteritens.itens.hidromel.item.HidromelItem
 import org.cabradati.betteritens.itens.hidromel.recipes.HidromelRecipe
-import org.cabradati.betteritens.utils.extensions.ItemContainer
+import org.cabradati.betteritens.utils.ItemContainer
 
 class HidromelContainer(private val diContainer: DIContainer) : ItemContainer {
 

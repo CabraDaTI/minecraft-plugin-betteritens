@@ -4,6 +4,8 @@ import net.kyori.adventure.text.Component
 import org.bukkit.Material
 import org.bukkit.inventory.ItemStack
 import org.bukkit.inventory.meta.BlockDataMeta
+import org.cabradati.betteritens.models.BetterItensType
+import org.cabradati.betteritens.utils.extensions.setBetterItemType
 
 interface HidromelItem {
     companion object {
@@ -19,7 +21,9 @@ interface HidromelItem {
                 )
             )
 
-            hidromelMeta.getBlockData(Material.HONEY_BOTTLE).hidromel.itemMeta = hidromelMeta
+            hidromelMeta.setBetterItemType(BetterItensType.HIDROMEL)
+
+            hidromel.itemMeta = hidromelMeta
 
             return hidromel
 

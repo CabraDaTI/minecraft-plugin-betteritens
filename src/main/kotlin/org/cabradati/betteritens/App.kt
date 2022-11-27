@@ -2,7 +2,7 @@ package org.cabradati.betteritens
 
 import org.bukkit.plugin.java.JavaPlugin
 import org.cabradati.betteritens.itens.hidromel.HidromelContainer
-import org.cabradati.betteritens.utils.extensions.ItemContainer
+import org.cabradati.betteritens.utils.ItemContainer
 
 class App : JavaPlugin() {
 
@@ -10,6 +10,7 @@ class App : JavaPlugin() {
         const val ATIVAR_PLUGIN = "plugin.enabled"
         const val ATIVAR_DEBUG = "plugin.debug"
         const val ITEM_PREFIX = "item."
+        const val NAMESPACEKEY_ITEM = "plugin.betteritens.type"
     }
 
     override fun onEnable() {

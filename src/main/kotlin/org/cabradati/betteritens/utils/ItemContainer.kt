@@ -1,4 +1,4 @@
-package org.cabradati.betteritens.utils.extensions
+package org.cabradati.betteritens.utils
 
 interface ItemContainer {
 
