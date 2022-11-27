@@ -25,10 +25,14 @@ class HidromelContainer(private val diContainer: DIContainer) : ItemContainer {
     }
 
     override fun registerEvents() {
+        if (!parametroAtivarItem) {
+            diContainer.log("item - hidromel - item está desativado, nenhum evento será registrado")
+        }
 
         val plugin = diContainer.plugin
         val server = diContainer.server
 
+        diContainer.log("item - hidromel - registrando eventos")
         server.pluginManager.registerEvents(
             HidromelConsumirEvent(diContainer),
             plugin
@@ -37,10 +41,14 @@ class HidromelContainer(private val diContainer: DIContainer) : ItemContainer {
     }
 
     override fun registerRecipe() {
+        if (!parametroAtivarItem) {
+            diContainer.log("item - hidromel - item está desativado, nenhum recipe será registrado")
+        }
 
         val plugin = diContainer.plugin
         val server = diContainer.server
 
+        diContainer.log("item - hidromel - registrando recipe")
         val key = NamespacedKey(plugin, "hidromel")
         val item = HidromelItem.buildItem()
         val recipe = HidromelRecipe.build(key, item)

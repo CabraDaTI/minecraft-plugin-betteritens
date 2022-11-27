@@ -12,9 +12,10 @@ class HidromelRecipe {
 
             val recipe = ShapedRecipe(namespacedKey, item)
 
-            recipe.shape("T", "M")
+            recipe.shape("T", "M", "G")
             recipe.setIngredient('T', Material.WHEAT)
-            recipe.setIngredient('M', Material.HONEY_BOTTLE)
+            recipe.setIngredient('M', Material.HONEYCOMB)
+            recipe.setIngredient('G', Material.GLASS_BOTTLE)
 
             return recipe
 
